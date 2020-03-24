@@ -31,29 +31,23 @@ a {
     background-position: center;
 }
 
-.logo__place_header{
+.logo_place_header{
    
     width: 183px;
-    height: 32px;
-   
+    height: 32px;   
     top: 30px;
-
     left: 64px;
-
     position: absolute;
     background-image: url(../images/logo.svg);
 }
 
-.logo__place_footer{
+.logo_place_footer{
+    top: 0px;
+    left: 0px;
     width: 183px;
     height: 35px;
-
-    top: 0px;
-    
-    left: 0px;
-
-    position: absolute;
     background-image: url(../images/logo_white.svg);
+    
 }
 
 
@@ -95,7 +89,7 @@ a {
     font-weight: normal;
 }
 
-.header__subtitle_link {
+.header__link {
     color: #2F80ED;
     text-decoration: none;
 }
@@ -164,9 +158,10 @@ a {
     font-size: 24px;
 }
 
-.two-columns__paragraph_distance {
+.two-columns__paragraph:c {
     margin-bottom: 30px;
-    margin-top: 30px;
+    margin-top: 30px;  
+
 }
 
 .two-columns__span-accent {
@@ -209,8 +204,7 @@ a {
     justify-content: space-between;
 }
 
-.table_cell {
-    width: 240px;
+.table__cell {
     margin-top: 60px;
 }
 
@@ -219,7 +213,7 @@ a {
     line-height: 1.15;
     font-size: 24px;
     font-weight: 700;
-    margin: 0px auto 16px;
+    margin: 0px auto 0px;
 }
 
 .table__text {
@@ -227,14 +221,8 @@ a {
     line-height: 23px;
     font-size: 18px;
     font-weight: 400;
-    margin: 0px;
+    margin: 20px 0px 0px 0px;
 }
-
-.table__bank {
-    margin: 20px auto 0px;
-}
-
-
 
 /*----------------------------*/
 /*feinman*/
@@ -298,7 +286,7 @@ a {
 .kaufman{
     padding-top: 90px;
     padding-bottom: 90px;
-    background-color: black;
+    background-color: #1F1F1F;
     color: white;
     overflow: hidden;
     position: relative;
@@ -314,6 +302,7 @@ a {
     top: 0px;
     right: -210px;
     z-index: -1;
+    background-image: url(../images/triangle.svg);
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -339,7 +328,7 @@ a {
     padding-top: 60px;
     padding-bottom: 40px;
     color: white;
-    background-color: black;
+    background-color: #1F1F1F;
 }
 
 .footer__columns {
@@ -353,6 +342,33 @@ a {
 
 .footer__column_content_copyright {
     flex-basis: 711px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__column-links {
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0%;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}
+
+.footer__column-link{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.footer__column-heading{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 .footer__column_content_info {
@@ -360,23 +376,14 @@ a {
     flex-direction: column;
 }
 
-.footer__social {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 16px;
-}
-
-.footer__social-link {
-    line-height: 30px;
-    font-size: 18px;
-    font-weight: 400;
-    color: white;
-    text-decoration: none;
-}
-
 .footer__author {
-    margin: 18px auto;
-    position: absolute;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: normal;
     left: 0px;
     bottom: 0px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    margin-left: 0px;
+    margin-right: auto;
 }
