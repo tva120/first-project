@@ -1,0 +1,24 @@
+.logo {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo_place_header{
+   
+    width: 183px;
+    height: 32px;   
+    top: 30px;
+    left: 64px;
+    position: absolute;
+    background-image: url(../../images/logo.svg);
+}
+
+.logo_place_footer{
+    top: 0px;
+    left: 0px;
+    width: 183px;
+    height: 35px;
+    background-image: url(../../images/logo_white.svg);
+    
+}

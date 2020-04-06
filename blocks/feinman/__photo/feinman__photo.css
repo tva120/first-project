@@ -1,0 +1,9 @@
+
+.feinman__photo {
+    height: 637px;
+    width: 867px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 1;
+}
