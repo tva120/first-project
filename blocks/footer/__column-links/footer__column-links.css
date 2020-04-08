@@ -1,0 +1,9 @@
+.footer__column-links {
+    cursor: pointer;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 0%;
+    margin-bottom: 16px;
+    margin-top: 0px;
+}

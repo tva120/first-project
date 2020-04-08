@@ -11,12 +11,12 @@
 <body>
     <div class="page">
         <header class="header">
-            <a class="logo logo_place_header" href="https://praktikum.yandex.ru/">
+            <a class="link logo logo_place_header" href="https://praktikum.yandex.ru/">
             </a>
             <h1 class="header__title">Научиться учиться</h1>
             <p class="header__subtitle">Какие современные и
                 эффективные подходы к обучению вы можете
-                использовать в своей жизни? <a href="#" class="header__link">Узнать &rarr;</a></p>
+                использовать в своей жизни? <a href="#" class="link header__link">Узнать &rarr;</a></p>
             <div class="header__main-illustration">
             </div>
             <div class="header__square-pic"></div>
@@ -84,10 +84,10 @@
             <section class="video">
                 <h2 class="section-title">Видео на TED</h2>
                 <p class="section-subtitle">Для тех кто любит прокрастинировать</p>
-                <div class="video__iframe">
-                    <iframe width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"
+                <div class="video__iframes">
+                    <iframe class="video__iframe" frameborder="no" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU"
                         allowfullscreen></iframe>
-                    <iframe width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"
+                    <iframe class="video__iframe" frameborder="no" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY"
                         allowfullscreen></iframe>
                 </div>
             </section>
@@ -95,7 +95,8 @@
             <section class="oakley">
                 <div class="two-columns">
                     <h2 class="two-columns__brief">История Барбары Оакли.</h2>
-                    <p class="two-columns__main-text two-columns__paragraph">
+                    <div class="two-columns__main-text">
+                    <p class="two-columns__paragraph">
                         С детства Барбаре не давалась математика. Она считала себя законченным
                         гуманитарием, причём далеко не самым умным. В армии она изучала русский язык, чтобы получить
                         надбавку,
@@ -105,13 +106,14 @@
                         даётся», ваши
                         добытые трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
                     </p>
+                    </div>
                 </div>
             </section>
 
             <section class="feinman">
                 <h2 class="feinman__title">Метод Фейнмана</h2>
                 <p class="feinman__subtitle">Выучить и не забыть.</p>
-                <a class="feinman__link" href="https://lifehacker.ru/metod-fejnmana/">Подробнее &rarr;</a>
+                <a class="link feinman__link" href="https://lifehacker.ru/metod-fejnmana/">Подробнее &rarr;</a>
                 <img class="feinman__photo" src="images/feinman.png" alt="Фейнман">
             </section>
 
@@ -159,7 +161,7 @@
 
             <section class="khan">
                 <div class="khan__container">
-                    <div class="khan__author">Салман Хан</div>
+                    <h1 class="khan__author">Салман Хан</h1>
                     <h2 class="khan__title">Весь мир — школа</h2>
                     <blockquote class="khan__quote">Cтрасть и новаторство Сала Хана меняют процесс обучения миллионов
                         студентов
@@ -167,11 +169,11 @@
                         учащиеся
                         повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.
                     </blockquote>
-                    <div class="khan__quote-author">Джордж Лукас</div>
-                    <div class="khan__quote-author-subline">Кинорежиссер, продюсер</div>
+                    <p class="khan__quote-author">Джордж Лукас</p>
+                    <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
                     <div class="khan__book-container">
-                        <img class="khan__book-pic" src="images/book.jpg" alt="khan_book">
-                        <a class="khan__book-link" target="_blank"
+                        <img class="khan__book-pic" src="images/book.jpg" alt="Салман Хан (Весь мир — школа)">
+                        <a class="link khan__book-link" target="_blank"
                             href="https://read.amazon.com/kp/embed?asin=B008HTQ3FW&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_0V2IEbTQS3YKG">Купить
                             книгу &rarr;</a>
                     </div>
@@ -231,22 +233,24 @@
                 <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
                 <!--<div class="resourses__logo-zone">-->
                 <ul class="resourses__logo-zone">
-                    <li class="resourses__list-item"><a class="resourses__link" href="https://arzamas.academy/" target="_blank">
-                            <img class="resourses__logo" src="images/logo/arzamas.svg" alt="Arzamas">
+                    <li class="resourses__list-item">
+                        <!--Был рассмотрен вариант с background-image, но наставник сказал, что здесь нет никакой ошибки, тэг <img> обернут в тэг <a>, а уже в нем есть ссылка на внешний ресурс-->
+                        <a class="link resourses__link" href="https://arzamas.academy/" target="_blank">
+                            <img class="resourses__logo" src="images/logo/n1.svg" alt="Arzamas">
                         </a>
                     </li>
                     <li class="resourses__list-item">
-                        <a class="resourses__link" href="https://nplus1.ru/" target="_blank">
+                        <a class="link resourses__link" href="https://nplus1.ru/" target="_blank">
                             <img class="resourses__logo" src="images/logo/n1.svg" alt="N + 1">
                         </a>
                     </li>
                     <li class="resourses__list-item">
-                        <a class="resourses__link" href="https://strelka.com/" target="_blank">
+                        <a class="link resourses__link" href="https://strelka.com/" target="_blank">
                             <img class="resourses__logo" src="images/logo/strelka.svg" alt="Стрелка">
                         </a>
                     </li>
                     <li class="resourses__list-item">
-                        <a class="resourses__link" href="https://polka.academy/" target="_blank">
+                        <a class="link resourses__link" href="https://polka.academy/" target="_blank">
                             <img class="resourses__logo" src="images/logo/polka.svg" alt="Полка">
                         </a>
                     </li>
@@ -260,7 +264,7 @@
             <div class="footer__columns">
                 <div class="footer__column footer__column_content_copyright">
 
-                    <a class="logo logo_place_footer" href="https://praktikum.yandex.ru/"> </a>
+                    <a class="link logo logo_place_footer" href="https://praktikum.yandex.ru/"> </a>
 
                     <p class="footer__author">&copy; 2020. Трошков Вадим</p>
                 </div>
@@ -268,29 +272,35 @@
                 <nav class="footer__column footer__column_content_info">
                     <h4 class="footer__column-heading">О Практикуме</h4>
                     <ul class="footer__column-links">
-                        <li class="footer__list-item"><a class="footer__column-link">Главная</a></li>
-                        <li class="footer__list-item"><a class="footer__column-link">Концепция</a></li>
-                        <li class="footer__list-item"><a class="footer__column-link">Наставники</a></li>
+                        <li class="footer__list-item"><a class="link footer__column-link">Главная</a></li>
+                        <li class="footer__list-item"><a class="link footer__column-link">Концепция</a></li>
+                        <li class="footer__list-item"><a class="link footer__column-link">Наставники</a></li>
                     </ul>
                 </nav>
 
                 <nav class="footer__column footer__column_content_social">
                     <h4 class="footer__column-heading">Соцсети</h4>
                     <ul class="footer__column-links">
-                        <li class="footer__list-item"><a class="footer__column-link"
+                        <li class="footer__list-item">
+                            <a class="link footer__column-link"
                                 href="https://www.facebook.com/yandex.praktikum/" target="_blank">
                                 <img class="footer__social-icon" src="images/facebook_white.svg" alt="Facebook">
                                 Facebook
-                            </a></li>
-                        <li class="footer__list-item"><a class="footer__column-link"
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="link footer__column-link"
                                 href="https://vk.com/yandex.praktikum" target="_blank">
                                 <img class="footer__social-icon" src="images/vk_white.svg" alt="VK"> ВКонтакте
-                            </a></li>
-                        <li class="footer__list-item"><a class="footer__column-link"
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="link footer__column-link"
                                 href="https://www.instagram.com/yndx.praktikum/" target="_blank">
                                 <img class="footer__social-icon" src="images/instagram_white.svg" alt="Instagram">
                                 Instagram
-                            </a></li>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
