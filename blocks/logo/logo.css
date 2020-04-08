@@ -1,5 +1,6 @@
-@import url(./_place_footer/logo_place_footer.css);
-@import url(./_place_header/logo_place_header.css);
+@import url(./_place/logo_place_header.css);
+@import url(./_place/logo_place_footer.css);
+
 .logo {
     background-size: contain;
     background-repeat: no-repeat;

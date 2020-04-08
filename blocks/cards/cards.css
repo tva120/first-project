@@ -8,6 +8,7 @@
     grid-template-columns: 240px 240px 240px;
     grid-column-gap: 100px;
     justify-content: center;
-    width: 80%;
+    width: 920px;
+    margin: 0px auto 0px auto;
 }
 
